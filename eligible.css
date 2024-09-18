@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #0004ff;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0004ff;
+}
+
+.neon-box {
+    background-color: #ffffff;
+    border: 2px solid #04f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #04f, 0 0 20px #04f, 0 0 30px #04f;
+    color: #000000;
+    text-align: center;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0004ff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0019ff;
+}
+
+#outcome {
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#loading-animation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+#loading-animation img {
+    width: 100px;
+    height: 100px;
+}
+
+#outcome {
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out; /* Added animation */
+}
+
+#resultBox {
+    margin-top: 20px; /* Added margin for better spacing */
+    position: relative;
+}
+
+#result,
+#admissionRate,
+#visaSuccessRate {
+    margin-bottom: 10px; /* Added margin between paragraphs */
+}
